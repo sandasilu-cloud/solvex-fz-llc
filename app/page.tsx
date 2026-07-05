@@ -40,29 +40,29 @@ const industries = [
 ];
 
 const services = [
-  { title: "System Design, Integration & Commissioning", body: "End-to-end design and handover of MEP and smart building systems.", img: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=900&auto=format&fit=crop" },
-  { title: "Water Quality Monitoring", body: "Continuous monitoring to safeguard potable and process water systems.", img: "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?q=80&w=900&auto=format&fit=crop" },
-  { title: "Technical Testing & Inspection", body: "Independent verification of electrical, mechanical, and plumbing systems.", img: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=900&auto=format&fit=crop" },
-  { title: "Predictive Maintenance & Asset Management", body: "Condition-based monitoring that extends asset life and reduces downtime.", img: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=900&auto=format&fit=crop" },
-  { title: "Non-Destructive Testing", body: "Thermal imaging, ultrasonic, and inspection methods that protect uptime.", img: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=900&auto=format&fit=crop" },
-  { title: "Energy Management", body: "Metering, analytics, and optimization strategies that cut operating cost.", img: "https://images.unsplash.com/photo-1581093588401-7e3b4a3b5d0d?q=80&w=900&auto=format&fit=crop" },
+  { title: "System Design, Integration & Commissioning", body: "End-to-end design and handover of MEP and smart building systems.", img: "/images/services/system-design-integration.avif" },
+  { title: "Water Quality Monitoring", body: "Continuous monitoring to safeguard potable and process water systems.", img: "/images/services/water-quality-monitoring.avif" },
+  { title: "Technical Testing & Inspection", body: "Independent verification of electrical, mechanical, and plumbing systems.", img: "/images/services/testing-inspections.avif" },
+  { title: "Predictive Maintenance & Asset Management", body: "Condition-based monitoring that extends asset life and reduces downtime.", img: "/images/services/predictive-maintenance.avif" },
+  { title: "Non-Destructive Testing", body: "Thermal imaging, ultrasonic, and inspection methods that protect uptime.", img: "/images/services/non-destructive-testing.avif" },
+  { title: "Energy Management", body: "Metering, analytics, and optimization strategies that cut operating cost.", img: "/images/services/energy-management.avif" },
 ];
 
 const products = [
-  { name: "Smart Building Systems", img: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=600&auto=format&fit=crop" },
-  { name: "Swimming Pool Systems", img: "https://images.unsplash.com/photo-1576675466969-38eeae4b41f6?q=80&w=600&auto=format&fit=crop" },
-  { name: "Reverse Osmosis Systems", img: "https://images.unsplash.com/photo-1581093458791-9d42cf6c1f2c?q=80&w=600&auto=format&fit=crop" },
-  { name: "Sewage Treatment Plants", img: "https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?q=80&w=600&auto=format&fit=crop" },
-  { name: "Solid Waste Management", img: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600&auto=format&fit=crop" },
-  { name: "Hot Water Systems", img: "https://images.unsplash.com/photo-1581094271901-8022df4466f9?q=80&w=600&auto=format&fit=crop" },
-  { name: "Cooling Towers", img: "https://images.unsplash.com/photo-1581093196277-9f608bb3b511?q=80&w=600&auto=format&fit=crop" },
-  { name: "LV / MV / ELV Systems", img: "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=600&auto=format&fit=crop" },
+  { name: "Smart Building Systems", img: "/images/smart-building-systems.avif" },
+  { name: "Swimming Pool Systems", img: "/images/swimming-pool-systems.avif" },
+  { name: "Reverse Osmosis Systems", img: "/images/reverse-osmosis-systems.avif" },
+  { name: "Sewage Treatment Plants", img: "/images/sewage-treatment-plants.avif" },
+  { name: "Solid Waste Management", img: "/images/solid-waste-management.avif" },
+  { name: "Hot Water Systems", img: "/images/hot-water-systems.avif" },
+  { name: "Cooling Towers", img: "/images/cooling-towers.avif" },
+  { name: "LV / MV / ELV Systems", img: "/images/electrical-systems.avif" },
 ];
 
 const projects = [
-  { tag: "Hospitality — Dubai", title: "Five-Star Resort MEP Upgrade", body: "Full MEP retrofit & energy optimization", img: "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=900&auto=format&fit=crop" },
-  { tag: "Industrial — Sharjah", title: "Manufacturing Plant Commissioning", body: "Testing & commissioning of power systems", img: "https://images.unsplash.com/photo-1581094651181-35942459ef62?q=80&w=900&auto=format&fit=crop" },
-  { tag: "Commercial — Abu Dhabi", title: "Smart Tower Building Management", body: "BMS integration & predictive maintenance", img: "https://images.unsplash.com/photo-1545179605-1296651e9d43?q=80&w=900&auto=format&fit=crop" },
+  { tag: "Hospitality — Dubai", title: "Five-Star Resort MEP Upgrade", body: "Full MEP retrofit & energy optimization", img: "/images/projects/project-abc-1.avif" },
+  { tag: "Industrial — Sharjah", title: "Manufacturing Plant Commissioning", body: "Testing & commissioning of power systems", img: "/images/projects/project-abc-2.avif" },
+  { tag: "Commercial — Abu Dhabi", title: "Smart Tower Building Management", body: "BMS integration & predictive maintenance", img: "/images/projects/project-abc-3.avif" },
 ];
 
 const process = [
@@ -82,16 +82,16 @@ export default function Home() {
           alt="Dubai skyline engineering infrastructure at dusk"
           fill
           priority
-          className="object-cover opacity-55"
+          className="object-cover brightness-75"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-navy-deep/55 via-navy-deep/78 to-navy-deep" />
-        <div className="relative z-10 mx-auto max-w-[1240px] px-6 lg:px-8">
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/60 to-navy-deep" />
+        <div className="relative z-20 mx-auto max-w-[1240px] px-6 lg:px-8">
           <div className="max-w-[780px]">
             <div className="eyebrow mb-5 text-gold">SOLVEX Engineering FZ LLC — UAE</div>
-            <h1 className="font-heading text-[clamp(38px,5.4vw,64px)] font-bold leading-[1.08] text-white">
+            <h1 className="font-heading text-[clamp(38px,5.4vw,64px)] font-bold leading-[1.08] !text-gold">
               Engineering Smarter.<br />Building Better.
             </h1>
-            <p className="mt-5 max-w-[600px] text-lg text-white/82">
+            <p className="mt-5 max-w-[600px] text-lg text-white">
               Delivering innovative Mechanical, Electrical & Plumbing (MEP), Smart
               Infrastructure, Energy Management, Testing & Commissioning,
               Predictive Maintenance, and Industrial Engineering solutions across
@@ -143,14 +143,10 @@ export default function Home() {
               An engineering partner, not just a contractor
             </h2>
             <p className="mt-5 mb-8 text-[16.5px] text-gray-600">
-              SOLVEX Engineering FZ LLC is a forward-thinking engineering company
-              delivering advanced Mechanical, Electrical & Plumbing (MEP)
-              systems, smart technologies, testing & commissioning, predictive
-              maintenance, and sustainable engineering solutions. Led by
-              experienced founders with extensive international expertise,
-              SOLVEX supports hospitality, commercial, industrial, healthcare,
-              and infrastructure projects across the UAE and international
-              markets.
+            SOLVEX Engineering FZ LLC is a forward-thinking engineering partner engineered for modern operational demands. We provide 
+advanced systems, modern engineering solutions, and innovative maintenance techniques, Equipment tailored specifically for the 
+hospitality and industrial sectors. We are dedicated on Solving Complexity through modern engineering solutions.
+
             </p>
             <div className="grid grid-cols-2 gap-6 border-t border-gray-200 pt-8 sm:grid-cols-4">
               {trust.slice(0, 4).map((t) => (
