@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
+import ProjectGallery from "@/components/ProjectGallery";
+
 
 export const metadata: Metadata = {
   title: "Featured Projects",
@@ -10,12 +12,12 @@ export const metadata: Metadata = {
 };
 
 const projects = [
-  { tag: "Hospitality — Dubai", title: "Five-Star Resort MEP Upgrade", scope: "Full MEP retrofit & energy optimization", desc: "Complete mechanical, electrical, and plumbing system upgrade for a luxury beachfront resort, including energy metering and HVAC optimization.", img: "/images/projects/project-abc-1.avif" },
-  { tag: "Industrial — Sharjah", title: "Manufacturing Plant Commissioning", scope: "Testing & commissioning of power systems", desc: "End-to-end testing and commissioning of LV/MV power distribution and process control systems for a manufacturing facility.", img: "/images/projects/project-abc-2.avif" },
-  { tag: "Commercial — Abu Dhabi", title: "Smart Tower Building Management", scope: "BMS integration & predictive maintenance", desc: "Building management system integration paired with a predictive maintenance program for a multi-tenant commercial tower.", img: "/images/projects/project-abc-3.avif" },
-  { tag: "Healthcare — Dubai", title: "Hospital MEP Compliance Review", scope: "Technical testing & inspection", desc: "Independent inspection and compliance verification of critical MEP systems across a multi-floor healthcare facility.", img: "/images/projects/project-abc-4.avif" },
-  { tag: "Infrastructure — UAE", title: "Utility Water Treatment Support", scope: "Water quality monitoring", desc: "Ongoing water quality monitoring and reporting for a regional utility water treatment program.", img: "/images/projects/project-abc-5.avif" },
-  { tag: "Data Centre — Dubai", title: "Critical Cooling Reliability Program", scope: "Predictive maintenance & asset management", desc: "Condition-based maintenance program for cooling and power redundancy systems supporting a Tier III data centre.", img: "/images/projects/project-abc-6.avif" },
+  { tag: "Hospitality — Dubai", title: "Five-Star Resort MEP Upgrade", scope: "Full MEP retrofit & energy optimization", desc: "Complete mechanical, electrical, and plumbing system upgrade for a luxury beachfront resort, including energy metering and HVAC optimization.", images: ["/images/projects/project-1/project-abc-1.avif","/images/projects/project-abc-3.avif" ,"/images/projects/project-abc-4.avif","/images/projects/project-abc-5.avif","/images/projects/project-abc-6.avif"] },
+  { tag: "Industrial — Sharjah", title: "Manufacturing Plant Commissioning", scope: "Testing & commissioning of power systems", desc: "End-to-end testing and commissioning of LV/MV power distribution and process control systems for a manufacturing facility.", images: ["/images/projects/project-abc-1.avif", "/images/projects/project-abc-1b.avif"] },
+  { tag: "Commercial — Abu Dhabi", title: "Smart Tower Building Management", scope: "BMS integration & predictive maintenance", desc: "Building management system integration paired with a predictive maintenance program for a multi-tenant commercial tower.", images: ["/images/projects/project-abc-1.avif", "/images/projects/project-abc-1b.avif"] },
+  { tag: "Healthcare — Dubai", title: "Hospital MEP Compliance Review", scope: "Technical testing & inspection", desc: "Independent inspection and compliance verification of critical MEP systems across a multi-floor healthcare facility.", images: ["/images/projects/project-abc-1.avif", "/images/projects/project-abc-1b.avif"] },
+  { tag: "Infrastructure — UAE", title: "Utility Water Treatment Support", scope: "Water quality monitoring", desc: "Ongoing water quality monitoring and reporting for a regional utility water treatment program.", images: ["/images/projects/project-abc-1.avif", "/images/projects/project-abc-1b.avif"] },
+  { tag: "Data Centre — Dubai", title: "Critical Cooling Reliability Program", scope: "Predictive maintenance & asset management", desc: "Condition-based maintenance program for cooling and power redundancy systems supporting a Tier III data centre.", images: ["/images/projects/project-abc-1.avif", "/images/projects/project-abc-1b.avif"] },
 ];
 
 export default function ProjectsPage() {
@@ -33,9 +35,8 @@ export default function ProjectsPage() {
             {projects.map((p, i) => (
               <Reveal key={p.title} delay={(i % 2) * 0.06}>
                 <div className="overflow-hidden rounded-sm border border-gray-200 bg-white">
-                  <div className="relative h-[260px]">
-                    <Image src={p.img} alt={p.title} fill className="object-cover" />
-                  </div>
+                  <ProjectGallery images={p.images} title={p.title} />
+                  
                   <div className="p-7">
                     <div className="eyebrow mb-3">{p.tag}</div>
                     <h3 className="mb-2 text-[19px] font-semibold">{p.title}</h3>

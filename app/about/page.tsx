@@ -34,23 +34,14 @@ export default function AboutPage() {
               Engineering solutions, not just installations
             </h2>
             <p className="mb-5 text-[16px] text-gray-600">
-            At SOLVEX Engineering, our objective is to produce high-quality 
-            Mechanical, Electrical, Plumbing (MEP) systems and services in a 
-            positive closely controlled, well-managed & professional manner. 
-            SOLVEX leverages over 16 years of specialized Mechanical, 
-            Electrical, and Plumbing (MEP) expertise as the company is driven 
-            by seasoned engineering founders, Mr. Sudhara Sandasilu (Co
-            founder/ Technical Director) and Mr. Meuranga Fernando 
-            (Co-founder / Managing Director). With leadership of founders, the entire 
-            team delivers high-performance design, installation, and maintenance 
-            solutions tailored to structural and operational needs.  
+            At SOLVEX Engineering, we focus on delivering Mechanical, Electrical, and Plumbing (MEP) systems that combine technical excellence with practical reliability. Founded by experienced engineers Mr. Sudhara Sandasilu (Co‑Founder & Technical Director) and Mr. Meuranga Fernando (Co‑Founder & Managing Director), the company builds on more than 16 years of specialized expertise in MEP design, installation, and maintenance. 
             </p>
             <p className="text-[16px] text-gray-600">
-            SOLVEX Engineering is Headquartered in United Arab Emirates (UAE) 
-            and Operational office located in Sri Lanka with operations spanning in 
-            Sri Lanka, Maldives, Seashells and expanding across multiple countries 
-            in Asia and the African region. Our team of professionals 
-            serves a diverse roster of clients across the globe 24/7.
+            Guided by the founders’ leadership, our team works closely with clients to provide solutions tailored to each project’s structural and operational requirements. Every system is designed and executed with attention to detail, ensuring performance, safety, and long‑term value.
+            </p>
+            <p className="text-[16px] text-gray-600">
+              Headquartered in the United Arab Emirates (UAE), with an operational office in Sri Lanka, SOLVEX Engineering supports projects across Sri Lanka, Maldives, Seychelles, and is steadily expanding into Asia and Africa. Our professionals serve a diverse portfolio of clients worldwide, offering dependable support around the clock.
+
             </p>
           </Reveal>
           <Reveal delay={0.1} className="relative aspect-[4/3] overflow-hidden rounded-sm">
