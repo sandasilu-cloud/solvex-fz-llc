@@ -15,7 +15,7 @@ const info = [
   { label: "Phone", value: "+971 00 000 0000" },
   { label: "Email", value: "sales@solvexeng.com" },
   { label: "WhatsApp", value: "+971 11 000 0000" },
-  { label: "Business Hours", value: "Sun–Thu, 8:00–18:00" },
+  { label: "Business Hours", value: "Mon–Fri, 8:00–18:00" },
 ];
 
 export default function ContactPage() {
