@@ -49,14 +49,14 @@ const services = [
 ];
 
 const products = [
-  { name: "Smart Building Systems", img: "/images/smart-building-systems.avif" },
-  { name: "Swimming Pool Systems", img: "/images/swimming-pool-systems.avif" },
-  { name: "Reverse Osmosis Systems", img: "/images/reverse-osmosis-systems.avif" },
-  { name: "Sewage Treatment Plants", img: "/images/sewage-treatment-plants.avif" },
-  { name: "Solid Waste Management", img: "/images/solid-waste-management.avif" },
-  { name: "Hot Water Systems", img: "/images/hot-water-systems.avif" },
-  { name: "Cooling Towers", img: "/images/cooling-towers.avif" },
-  { name: "LV / MV / ELV Systems", img: "/images/electrical-systems.avif" },
+  { name: "Smart Building Systems", img: "/images/products/smart-building-systems.avif" },
+  { name: "Swimming Pool Systems", img: "/images/products/swimming-pool-systems.avif" },
+  { name: "Reverse Osmosis Systems", img: "/images/products/reverse-osmosis-systems.avif" },
+  { name: "Sewage Treatment Plants", img: "/images/products/sewage-treatment-plants.avif" },
+  { name: "Solid Waste Management", img: "/images/products/solid-waste-management.avif" },
+  { name: "Hot Water Systems", img: "/images/products/hot-water-systems.avif" },
+  { name: "Cooling Towers", img: "/images/products/cooling-towers.avif" },
+  { name: "LV / MV / ELV Systems", img: "/images/products/elv-systems.avif" },
 ];
 
 const projects = [
@@ -129,7 +129,7 @@ export default function Home() {
           <Reveal className="relative">
             <div className="relative aspect-[4/5] overflow-hidden rounded-sm">
               <Image
-                src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?q=80&w=1000&auto=format&fit=crop"
+                src="/images/engineering-partner.avif"
                 alt="SOLVEX engineers reviewing technical drawings on site"
                 fill
                 className="object-cover"
@@ -296,7 +296,7 @@ hospitality and industrial sectors. We are dedicated on Solving Complexity throu
         <div className="mx-auto max-w-[1240px] px-6 lg:px-8">
           <Reveal className="mb-16 max-w-xl">
             <div className="eyebrow">Engineering Process</div>
-            <h2 className="mt-4 text-[clamp(28px,3.4vw,42px)] font-bold leading-tight text-white">
+            <h2 className="mt-4 text-[clamp(28px,3.4vw,42px)] font-bold leading-tight !text-gold">
               A disciplined path from concept to long-term performance
             </h2>
           </Reveal>
@@ -308,7 +308,7 @@ hospitality and industrial sectors. We are dedicated on Solving Complexity throu
                   <div className="font-heading relative z-10 mx-auto mb-4 flex h-[50px] w-[50px] items-center justify-center rounded-full border border-cyan bg-navy-deep font-bold text-cyan">
                     {p.n}
                   </div>
-                  <h4 className="mb-1.5 text-[14.5px] font-semibold text-white">{p.title}</h4>
+                  <h4 className="mb-1.5 text-[14.5px] font-semibold !text-gold">{p.title}</h4>
                   <p className="mx-auto max-w-[150px] text-xs text-white/55">{p.body}</p>
                 </div>
               ))}
