@@ -22,7 +22,7 @@ export default function AboutPage() {
       <PageHero
         eyebrow="About Solvex"
         title = "An engineering partner built on technical discipline"
-        subtitle="Sixteen years of MEP and infrastructure engineering across the UAE and international markets."
+        subtitle="Sixteen years of MEP and infrastructure engineering across the region and international markets."
         image="/images/about-solvex.avif"
       />
 

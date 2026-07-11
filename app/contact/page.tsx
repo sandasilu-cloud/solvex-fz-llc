@@ -34,7 +34,16 @@ export default function ContactPage() {
           </Reveal>
           <Reveal delay={0.1}>
             <div className="mb-7 flex h-60 items-center justify-center rounded-sm bg-gray-100 text-sm text-gray-400">
-              Google Map — Head Office Location
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3612.6455513771017!2d55.27430731501!3d25.19715898389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6956c579af7f%3A0x88371e1f4c78a03d!2sBurj%20Khalifa!5e0!3m2!1sen!2sae!4v1699999999999!5m2!1sen!2sae"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="SOLVEX Head Office Location"
+              />
             </div>
             <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
               {info.map((c) => (

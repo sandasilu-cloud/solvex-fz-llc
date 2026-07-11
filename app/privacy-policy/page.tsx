@@ -10,7 +10,7 @@ export default function PrivacyPolicy() {
             eyebrow="Privacy Policy"
             title="Your Privacy, Our Commitment "
             subtitle="SOLVEX Engineering FZ LLC values your trust. We are committed to protecting your personal information and ensuring transparency in how it is collected, used, and safeguarded."
-            image="/images/leadership.avif"
+            image="/images/terms-privacy.avif"
           />
     
     <section className="mx-auto max-w-[800px] px-6 py-32 lg:px-8">

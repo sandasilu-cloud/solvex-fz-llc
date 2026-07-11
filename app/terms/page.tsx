@@ -12,7 +12,7 @@ export default function Terms() {
                 subtitle="SOLVEX Engineering FZ LLC provides this website for informational and business purposes, 
                 and by accessing it you agree to use the content responsibly, respect intellectual property, and comply 
                 with applicable laws. "
-                image="/images/leadership.avif"
+                image="/images/terms-privacy.avif"
               />
     
     <section className="mx-auto max-w-[800px] px-6 py-32 lg:px-8">

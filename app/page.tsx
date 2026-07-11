@@ -99,7 +99,7 @@ export default function Home() {
               Delivering innovative Mechanical, Electrical & Plumbing (MEP), Smart
               Infrastructure, Energy Management, Testing & Commissioning,
               Predictive Maintenance, and Industrial Engineering solutions across
-              the UAE and international markets.
+              the region and international markets.
             </p>
             <div className="mt-9 flex flex-wrap gap-4">
               <Link href="/contact" className="rounded-sm bg-cyan px-7 py-4 text-sm font-semibold text-white transition-all hover:-translate-y-0.5 hover:bg-[#0093cc] hover:shadow-[0_10px_25px_rgba(0,168,232,0.3)]">
@@ -331,7 +331,7 @@ hospitality and industrial sectors. We are dedicated on Solving Complexity throu
               schedule.&rdquo;
             </p>
             <div className="text-[13.5px] text-gray-500">
-              <b className="text-navy">Facilities Director</b> — Luxury Hospitality Group, Dubai
+              <b className="text-navy">Director of Engineering</b> — Luxury Hospitality Group, Maldives
             </div>
           </Reveal>
         </div>
