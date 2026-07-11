@@ -60,9 +60,9 @@ const products = [
 ];
 
 const projects = [
-  { tag: "Hospitality — Dubai", title: "Five-Star Resort MEP Upgrade", body: "Full MEP retrofit & energy optimization", img: "/images/projects/project-abc-1.avif" },
-  { tag: "Industrial — Sharjah", title: "Manufacturing Plant Commissioning", body: "Testing & commissioning of power systems", img: "/images/projects/project-abc-2.avif" },
-  { tag: "Commercial — Abu Dhabi", title: "Smart Tower Building Management", body: "BMS integration & predictive maintenance", img: "/images/projects/project-abc-3.avif" },
+  { tag: "Hospitality — Maldives", title: "Swimming Pool Systems", body: "Design , Supply & Commissioning of 495m3 Main pool at Crossroads Maldives", img: "/images/projects/curio/curio-01.avif" },
+  { tag: "Residential — Colombo", title: "Video Intercom System", body: "192 luxury apartments equipped with 7‑inch ART7/G+", img: "/images/projects/ccc/vdp-02.avif" },
+  { tag: "Hospitality — Maldives", title: "Solid Waste Management", body: "Design, Supply, Installation, Testing and commissioning of solid waste incinerator", img: "/images/projects/nika/nika-01.avif" },
 ];
 
 const process = [
@@ -282,7 +282,7 @@ hospitality and industrial sectors. We are dedicated on Solving Complexity throu
                   <Image src={p.img} alt={p.title} fill className="object-cover transition-transform duration-700 group-hover:scale-106" />
                   <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-navy-deep/92 via-transparent to-transparent p-7">
                     <div className="mb-2 text-[11px] uppercase tracking-[0.12em] text-gold">{p.tag}</div>
-                    <h3 className="mb-1.5 text-[19px] font-semibold text-white">{p.title}</h3>
+                    <h3 className="mb-1.5 text-[19px] font-semibold !text-gold">{p.title}</h3>
                     <p className="text-[12.5px] text-white/70">{p.body}</p>
                   </div>
                 </div>
