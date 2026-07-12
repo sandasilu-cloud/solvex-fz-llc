@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 const links = [
   { href: "/about", label: "About" },
@@ -34,7 +35,7 @@ export default function Header() {
       }`}
     >
       <div className="mx-auto flex max-w-[1240px] items-center justify-between px-6 lg:px-8">
-        <Link
+        {/*<Link
           href="/"
           className={`font-heading text-xl font-extrabold tracking-wide ${
             solid ? "text-navy" : "text-white"
@@ -42,6 +43,17 @@ export default function Header() {
         >
           SOLVEX<span className="text-cyan">.</span>
         </Link>
+        */}
+        
+        <Link href="/" className="relative block h-10 w-[180px]">
+  <Image
+    src={solid ? "/logo-color.png" : "/logo-white.png"}
+    alt="Solvex Engineering FZ LLC"
+    fill
+    className="object-contain object-left transition-opacity duration-300"
+    priority
+  />
+</Link>
 
         <nav className="hidden items-center gap-8 lg:flex">
           {links.map((l) => (

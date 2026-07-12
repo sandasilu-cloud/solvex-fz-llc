@@ -12,9 +12,9 @@ export const metadata: Metadata = {
 const info = [
   { label: "Head Office", value: "Dubai, UAE" },
   { label: "Operational Office", value: "Colombo, Sri Lanka" },
-  { label: "Phone", value: "+971 00 000 0000" },
+  { label: "Phone", value: "+94 76 790 8659" },
   { label: "Email", value: "sales@solvexeng.com" },
-  { label: "WhatsApp", value: "+971 11 000 0000" },
+  { label: "WhatsApp", value: "+94 76 790 8659" },
   { label: "Business Hours", value: "Mon–Fri, 8:00–18:00" },
 ];
 
