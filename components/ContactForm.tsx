@@ -34,11 +34,30 @@ export default function ContactForm() {
         </Field>
         <Field label="Service Required">
           <select className="field-input">
-            <option>System Design & Commissioning</option>
-            <option>Testing & Inspection</option>
-            <option>Predictive Maintenance</option>
+            <option>Annual Maintenance Contracts (AMC)</option>
+            <option>Boiler Systems</option>
             <option>Energy Management</option>
-            <option>Other</option>
+            <option>Extra Low Voltage Systems</option>
+            <option>HVAC Systems</option>
+            <option>Hot Water Systems</option>
+            <option>Low Voltage Systems</option>
+            <option>Medium Voltage Systems</option>
+            <option>Non-Destructive Testing</option>
+            <option>Operation & Maintenance</option>
+            <option>Plumbing Systems</option>
+            <option>Post-Installation Assistance</option>
+            <option>Predictive Maintenance & Asset Management</option>
+            <option>Reverse Osmosis Plants</option>
+            <option>Sewage Treatment Plants</option>
+            <option>Smart Building Systems</option>
+            <option>Solid Waste Management Systems</option>
+            <option>Swimming Pool Equipment</option>
+            <option>System Design, Integration & Commissioning</option>
+            <option>Technical Testing & Inspection</option>
+            <option>User Training & Technical Support</option>
+            <option>Warranty & Spare Parts</option>
+            <option>Water Quality Monitoring</option>
+            <option>Other </option>
           </select>
         </Field>
       </div>
