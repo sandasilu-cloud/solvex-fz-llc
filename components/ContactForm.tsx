@@ -33,7 +33,8 @@ export default function ContactForm() {
           <input type="text" className="field-input" />
         </Field>
         <Field label="Service Required">
-          <select className="field-input">
+          <select className="field-input" defaultValue="">
+            <option value="" disabled>--Please Select--</option>
             <option>Annual Maintenance Contracts (AMC)</option>
             <option>Boiler Systems</option>
             <option>Energy Management</option>

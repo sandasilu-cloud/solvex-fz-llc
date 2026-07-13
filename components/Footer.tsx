@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Link2, Share2, Camera, MessageCircle } from "lucide-react";
 
 export default function Footer() {
@@ -7,9 +8,17 @@ export default function Footer() {
       <div className="mx-auto max-w-[1240px] px-6 lg:px-8">
         <div className="mb-12 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
           <div>
-            <div className="font-heading mb-3 text-xl font-extrabold text-white">
+            {/*<div className="font-heading mb-3 text-xl font-extrabold text-white">
               SOLVEX<span className="text-cyan">.</span>
             </div>
+            */}
+            <Image
+              src="/logo-white.png"
+              alt="SOLVEX Engineering"
+              width={140}
+              height={36}
+              className="mb-3 h-9 w-auto"
+            />
             <p className="max-w-[280px] text-[13.5px] text-white/50">
               Engineering Smarter. Building Better. SOLVEX Engineering FZ LLC 
               delivers premium MEP, smart infrastructure, and technical consulting 
