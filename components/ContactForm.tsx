@@ -3,37 +3,68 @@
 import { useState } from "react";
 
 export default function ContactForm() {
-  const [sent, setSent] = useState(false);
+  const [status, setStatus] = useState<"idle" | "loading" | "sent" | "error">(
+    "idle"
+  );
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setStatus("loading");
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      if (!res.ok) throw new Error("Request failed");
+
+      setStatus("sent");
+      form.reset();
+    } catch (err) {
+      console.error(err);
+      setStatus("error");
+    }
+  }
 
   return (
-    <form
-      onSubmit={(e) => {
-        e.preventDefault();
-        setSent(true);
-      }}
-    >
+    <form onSubmit={handleSubmit}>
+      {/* Honeypot field - hidden from real users, bots tend to fill it in */}
+      <input
+        type="text"
+        name="website"
+        tabIndex={-1}
+        autoComplete="off"
+        className="hidden"
+      />
+
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
         <Field label="Name" required>
-          <input type="text" required className="field-input" />
+          <input type="text" name="name" required className="field-input" />
         </Field>
         <Field label="Company">
-          <input type="text" className="field-input" />
+          <input type="text" name="company" className="field-input" />
         </Field>
       </div>
       <div className="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-2">
         <Field label="Phone" required>
-          <input type="tel" required className="field-input" />
+          <input type="tel" name="phone" required className="field-input" />
         </Field>
         <Field label="Email" required>
-          <input type="email" required className="field-input" />
+          <input type="email" name="email" required className="field-input" />
         </Field>
       </div>
       <div className="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-2">
         <Field label="Country">
-          <input type="text" className="field-input" />
+          <input type="text" name="country" className="field-input" />
         </Field>
         <Field label="Service Required">
-          <select className="field-input" defaultValue="">
+          <select name="service" className="field-input" defaultValue="">
             <option value="" disabled>--Please Select--</option>
             <option>Annual Maintenance Contracts (AMC)</option>
             <option>Boiler Systems</option>
@@ -64,18 +95,25 @@ export default function ContactForm() {
       </div>
       <div className="mt-5">
         <Field label="Message">
-          <textarea rows={4} className="field-input" />
+          <textarea name="message" rows={4} className="field-input" />
         </Field>
       </div>
       <button
         type="submit"
-        className="mt-2 w-full rounded-sm bg-cyan py-4 text-sm font-semibold text-white transition-colors hover:bg-[#0093cc]"
+        disabled={status === "loading"}
+        className="mt-2 w-full rounded-sm bg-cyan py-4 text-sm font-semibold text-white transition-colors hover:bg-[#0093cc] disabled:opacity-60"
       >
-        Send Enquiry
+        {status === "loading" ? "Sending..." : "Send Enquiry"}
       </button>
-      {sent && (
+
+      {status === "sent" && (
         <p className="mt-4 text-[13px] text-cyan">
           Thank you — your enquiry has been received. Our team will contact you shortly.
+        </p>
+      )}
+      {status === "error" && (
+        <p className="mt-4 text-[13px] text-red-500">
+          Something went wrong. Please try again or email us directly.
         </p>
       )}
     </form>
