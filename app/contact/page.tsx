@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 };
 
 const info = [
-  { label: "Head Office", value: "Dubai, UAE" },
+  { label: "Head Office", value: "CWEP7677,\n Compass Building,\n Al Shohada Rd,\nAl Hamra Industrial Zone-FZ,\n Ras Al Khaimah,\nUnited Arab Emirates" },
   { label: "Operational Office", value: "Colombo, Sri Lanka" },
   { label: "Phone", value: "+1 (905) 581 3963" },
   { label: "Email", value: "sales@solvexeng.com" },
@@ -35,7 +35,7 @@ export default function ContactPage() {
           <Reveal delay={0.1}>
             <div className="mb-7 flex h-60 items-center justify-center rounded-sm bg-gray-100 text-sm text-gray-400">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3612.6455513771017!2d55.27430731501!3d25.19715898389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6956c579af7f%3A0x88371e1f4c78a03d!2sBurj%20Khalifa!5e0!3m2!1sen!2sae!4v1699999999999!5m2!1sen!2sae"
+                src="https://www.google.com/maps?q=25.665052,55.786282&z=17&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -51,7 +51,7 @@ export default function ContactPage() {
                   <div className="mb-2 text-[11px] font-semibold uppercase tracking-wide text-gold">
                     {c.label}
                   </div>
-                  <div className="text-sm font-medium text-navy">{c.value}</div>
+                  <div className="text-sm font-medium text-navy whitespace-pre-line">{c.value}</div>
                 </div>
               ))}
             </div>
