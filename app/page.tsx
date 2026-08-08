@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Reveal from "@/components/Reveal";
+import { WHATSAPP_LINK } from "@/components/WhatsAppConfig";
 import {
   Hotel, Building2, Factory, Cog, Cross, Landmark, Train, ShoppingBag,
   GraduationCap, Droplets, Server, Wrench, ArrowRight,
@@ -105,7 +106,7 @@ export default function Home() {
               <Link href="/contact" className="rounded-sm bg-cyan px-7 py-4 text-sm font-semibold text-white transition-all hover:-translate-y-0.5 hover:bg-[#0093cc] hover:shadow-[0_10px_25px_rgba(0,168,232,0.3)]">
                 Request a Quote
               </Link>
-              <a href="https://wa.me/971000000000" target="_blank" rel="noopener noreferrer" className="rounded-sm border border-white/40 px-7 py-4 text-sm font-semibold text-white transition-colors hover:bg-white/10">
+              <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="rounded-sm border border-white/40 px-7 py-4 text-sm font-semibold text-white transition-colors hover:bg-white/10">
                 WhatsApp Us
               </a>
             </div>
@@ -351,7 +352,7 @@ hospitality and industrial sectors. We are dedicated on Solving Complexity throu
               <Link href="/contact" className="rounded-sm bg-cyan px-7 py-4 text-sm font-semibold text-white transition-all hover:-translate-y-0.5 hover:bg-[#0093cc]">
                 Request a Quote
               </Link>
-              <a href="https://wa.me/971000000000" target="_blank" rel="noopener noreferrer" className="rounded-sm border border-white/40 px-7 py-4 text-sm font-semibold text-white hover:bg-white/10">
+              <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="rounded-sm border border-white/40 px-7 py-4 text-sm font-semibold text-white hover:bg-white/10">
                 Chat on WhatsApp
               </a>
             </div>
