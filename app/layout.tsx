@@ -17,7 +17,7 @@ const inter = Inter({
   weight: ["400", "500", "600"],
 });
 
-const siteUrl = "https://www.solvexengineering.com";
+const siteUrl = "https://www.solvexeng.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     "engineering consultancy UAE",
   ],
   openGraph: {
-    title: "SOLVEX Engineering FZ LLC | Engineering Smarter. Building Better.",
+    title: "SOLVEX Engineering FZ LLC | Smarter Engineering. Better Building.",
     description:
       "Premium MEP, smart infrastructure, energy management, and technical consulting across the UAE and international markets.",
     url: siteUrl,
