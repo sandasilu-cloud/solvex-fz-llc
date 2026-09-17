@@ -94,7 +94,7 @@ export default function Home() {
           <div className="max-w-[780px]">
             <div className="eyebrow mb-5 text-gold">SOLVEX Engineering FZ LLC — UAE</div>
             <h1 className="font-heading text-[clamp(38px,5.4vw,64px)] font-bold leading-[1.08] !text-gold">
-              Engineering Smarter.<br />Building Better.
+              Smarter Engineering.<br />Better Building.
             </h1>
             <p className="mt-5 max-w-[600px] text-lg text-white">
               Delivering innovative Mechanical, Electrical & Plumbing (MEP), Smart

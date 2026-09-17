@@ -20,7 +20,7 @@ export default function Footer() {
               className="mb-3 h-9 w-auto"
             />
             <p className="max-w-[280px] text-[13.5px] text-white/50">
-              Engineering Smarter. Building Better. SOLVEX Engineering FZ LLC 
+              Smarter Engineering. Better Building. SOLVEX Engineering FZ LLC 
               delivers premium MEP, smart infrastructure, and technical consulting 
               across the region and beyond.
             </p>
