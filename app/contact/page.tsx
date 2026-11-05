@@ -12,10 +12,10 @@ export const metadata: Metadata = {
 const info = [
   { label: "Head Office", value: "CWEP7677,\n Compass Building,\n Al Shohada Rd,\nAl Hamra Industrial Zone-FZ,\n Ras Al Khaimah,\nUnited Arab Emirates" },
   { label: "Operational Office", value: "Colombo, Sri Lanka" },
-  { label: "Phone", value: "+1 (905) 581 3963" },
+  { label: "Phone", value: "+1 (905) 581 3963\n +97 154 148 7469" },
   { label: "Email", value: "sales@solvexeng.com" },
-  { label: "WhatsApp", value: "+1 (905) 581 3963" },
-  { label: "Business Hours", value: "Mon–Fri, 8:00–18:00" },
+  { label: "WhatsApp", value: "+1 (905) 581 3963\n +97 154 148 7469" },
+  { label: "Business Hours", value: "Mon–Fri, 9:00–17:00" },
 ];
 
 export default function ContactPage() {
