@@ -9,9 +9,12 @@ export const metadata: Metadata = {
     "Meet the leadership team behind SOLVEX Engineering FZ LLC, bringing decades of international MEP and engineering project delivery experience.",
 };
 
+// Set to true to show leader photos again
+const SHOW_LEADER_IMAGES = false;
+
 const leaders = [
-  { role: "Co-Founder/Managing Director", focus: "M. W. Meuranga Fernando ", bio: "Over sixteen years of expertise in MEP project management and design‑build solutions for swimming pools, hot water, water treatment, and solid waste systems. Combines international exposure with strengths in customer service, sales management, and business planning. Bridges strategic growth with technical execution, building client trust and delivering complex projects with excellence.", img: "/images/meuranga.avif" },
-  { role: "Co-Founder/Technical Director", focus: "Sudhara S. B. Udugampala", bio: "Fourteen years of expertise in Building Services Engineering and MEP project management across hospitality, mixed‑use, and infrastructure developments in Sri Lanka, Seychelles, and the Maldives. Experienced in full lifecycle delivery including design, installation, systems integration, and commissioning. Combines technical depth with team leadership to deliver MEP systems for landmark projects.", img: "/images/sudhara.avif" },
+  { role: "Co-Founder/Managing Director", focus: "W. M Fernando ", bio: "Over sixteen years of expertise in MEP project management and design‑build solutions for swimming pools, hot water, water treatment, and solid waste systems. Combines international exposure with strengths in customer service, sales management, and business planning. Bridges strategic growth with technical execution, building client trust and delivering complex projects with excellence.", img: "/images/meuranga.avif" },
+  { role: "Co-Founder/Technical Director", focus: "S. S Bandara ", bio: "Fourteen years of expertise in Building Services Engineering and MEP project management across hospitality, mixed‑use, and infrastructure developments in Sri Lanka, Seychelles, and the Maldives. Experienced in full lifecycle delivery including design, installation, systems integration, and commissioning. Combines technical depth with team leadership to deliver MEP systems for landmark projects.", img: "/images/sudhara.avif" },
 ];
 
 const competencies = [
@@ -36,9 +39,11 @@ export default function LeadershipPage() {
           <div className="mb-16 grid grid-cols-1 gap-12 lg:grid-cols-2">
             {leaders.map((l, i) => (
               <Reveal key={l.role} delay={i * 0.1} className="flex gap-7">
+                {SHOW_LEADER_IMAGES && (
                 <div className="h-[180px] w-[150px] flex-shrink-0 overflow-hidden rounded-sm">
                   <Image src={l.img} alt={`${l.role} portrait`} width={300} height={360} className="h-full w-full object-cover" />
                 </div>
+                )}
                 <div>
                   <h3 className="text-lg font-semibold">{l.role}</h3>
                   <div className="my-2 text-xs font-semibold uppercase tracking-wide text-cyan">{l.focus}</div>
